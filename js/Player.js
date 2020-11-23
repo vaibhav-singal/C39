@@ -25,7 +25,7 @@ class Player {
       distance:this.distance
     });
   }
-
+// we make a function static when the object info. is not relatable
   static getPlayerInfo(){
     var playerInfoRef = database.ref('players');
     playerInfoRef.on("value",(data)=>{
